@@ -95,8 +95,7 @@ a{
   justify-content: space-between;    
 }
 nav .nav-links{
-  /* display: none; */
-  font-size: 10px;
+  display: none;
 }
 
 /* .......Start Contact........*/
