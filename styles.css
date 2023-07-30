@@ -264,7 +264,7 @@ section{
   
 }
 .ex-div{
-  margin: 0px 75px;
+  margin: auto;
   display: flex;
   gap: 20px;
 }
