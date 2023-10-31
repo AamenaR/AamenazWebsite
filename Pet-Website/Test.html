@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        color: rgb(255, 255, 255);
+        scroll-behavior: smooth;
+        overflow-x: hidden;
+      }
+      .container {
+        width: 90%;
+        margin: auto;
+        /* background: #000; */
+      }
+      .row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .col-33 {
+        width: 33.33%;
+        text-align: center;
+      }
+      .circle {
+        width: 300px;
+        height: 300px;
+        margin: auto;
+        border-radius: 50%;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+
+      .circle-1{
+        background-image: url(imgs/sec2-1.png);
+      }
+      .circle-2{
+        background-image: url(imgs/sec2-2.png);
+      }
+      .circle-3{
+        background-image: url(imgs/sec2-3.png);
+      }
+
+      h4 {
+        font-size: 30px;
+        padding: 20px 0px;
+      }
+      h4 + p {
+        font-size: 15px;
+      }
+      .main-text {
+        width: 70%;
+        margin: auto;
+        padding: 50px;
+        text-align: center;
+      }
+      h2 {
+        font-size: 50px;
+        text-transform: capitalize;
+      }
+      h2 + p {
+        font-size: 25px;
+        padding: 20px 100px;
+      }
+      /* shapes parent */
+      .section-wrapper{
+        position: relative;
+        height: 100vh;
+        z-index: -10;
+        background-color: rgb(124, 175, 245);
+      }
+
+      /* shapes  child positions */
+      .shape2{
+        position: absolute;
+        top: -30%;
+        right: -180px;
+        z-index: -1;
+      }
+
+      .shape1{
+        position: absolute;
+        top: -30%;
+        left: -130px;
+        z-index: -2;
+      }
+      .shape4{
+        position: absolute;
+        top: 20px;
+        left: 100px;
+        /* z-index: 3; */
+      }
+      .shape3{
+        position: absolute;
+        bottom: 0px;
+        right: 80px;
+        z-index: 3;
+      }
+      .shape5{
+        position: absolute;
+        top: 50px;
+        right: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- section 2 -->
+    <section id="section">
+      <div class="section-wrapper">
+        <img src="imgs/Shape-1.png" class="shape1" alt="">
+        <img src="imgs/Shape-2.png" class="shape2" alt="">
+        <img src="imgs/shape-3.png" alt="" class="shape3">
+        <img src="imgs/shape-4.png" alt="" class="shape4" width="70px">
+        <img src="imgs/shape-5.png" alt="" class="shape5">
+        <div class="container">
+          <div class="main-text">
+            <h2>title here</h2>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas
+              saepe porro accusamus! Reprehenderit, nostrum sunt.
+            </p>
+          </div>
+          <div class="row">
+            <div class="col-33">
+              <div class="circle circle-1"></div>
+              <h4>Hello</h4>
+              <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+            <div class="col-33">
+              <div class="circle circle-2"></div>
+              <h4>Hello</h4>
+              <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+            <div class="col-33">
+              <div class="circle circle-3"></div>
+              <h4>Hello</h4>
+              <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <style>
+      @media(max-width:576px){
+        .section-wrapper{
+          height: auto;
+        }
+        .shape1, .shape2{
+          display: none;
+        }
+        .shape4{
+          top: 10%;
+          left: 10px;
+        }
+        .shape5{
+          top: 50px;
+          right: 15px;
+        }
+        .main-text{
+          width: 100%;
+          padding: 0;
+        }
+        .main-text h2{
+          font-size: 30px;
+          padding-top: 10px;
+        }
+        .main-text p{
+          font-size: 20px;
+          padding: 15px 20px 30px;
+        }
+
+        .row{
+          flex-direction: column;
+        }
+
+        .col-33 {
+        width: 100%;
+        }
+      }
+    </style>
+  </body>
+</html>
+
+<!-- <div class="container">
+  <div class="main-shapes-position">
+
+      wave 1 left side
+      <div class="wave-1">
+          <img src="imgs/Shape-1.png" alt="" srcset="">
+      </div>
+      <div class="triangle-1">
+              <img src="imgs/shape-4.png" alt="" width="80%">
+      </div>
+      
+      wave 2 right side
+      <div class="wave-2">
+          <img src="imgs/Shape-2.png" alt="" srcset="">
+      </div>
+      <div class="square">
+          <img src="imgs/shape-5.png" alt="" width="80%">
+      </div>
+
+      <div class="triangle-2">
+          <img src="imgs/shape-3.png" alt="">
+      </div>
+      
+  <div class="text">
+      <div class="title">
+          <h1>title here</h1>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum illo provident ipsam?</p>
+      </div>
+  </div>
+      <div class="row1">
+          <div class="flex-row">
+               card 1 
+              <div class="card">
+                  <img src="imgs/sec2-1.png" alt="" class="circle-img">
+                  <h3>Pet Care</h3>
+                  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+              </div>
+
+               card 2 
+              <div class="card">
+                  <img src="imgs/sec2-2.png" alt="" class="circle-img">
+                  <h3>Pet Shop</h3>
+                  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+              </div>
+
+               card 3 
+              <div class="card">
+                  <img src="imgs/sec2-3.png" alt="" class="circle-img">
+                  <h3>Pet Help</h3>
+                  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+              </div>
+          </div>
+         
+      </div>
+  </div>
+</div>  -->
+<!-- 
+/* section 2  */
+/* shape positioning  */
+.main-shapes-position{
+    height: 100vh;
+    position: relative;
+}
+
+.wave-1{
+    position: absolute;
+    top: -110px;
+    left: -115px;
+    z-index: -3;
+}
+
+.wave-2{
+    position: absolute;
+    top: -120px;
+    right: -150px;
+    z-index: -2;
+}
+
+.triangle-1{
+    position: absolute;
+    top: 50px;
+    left: 120px;
+}
+
+.square{
+    position: absolute;
+    top: 110px;
+    right: 150px;
+}
+
+.triangle-2{
+    position: absolute;
+    bottom: 0;
+    right: 110px;
+}
+
+/*section-2  text styles */
+.text{
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 10;
+    text-align: center;
+}
+.title h1{
+    font-family: var(--primary-font);
+    text-transform: capitalize;
+    font-size: 75px;
+    margin-bottom: 10px;
+}
+.title p{
+margin: auto;
+font-size: 30px;
+width: 80%;
+}
+
+/*sec-2 image-card-info*/
+
+.row1{
+    position: relative;
+}
+.flex-row{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 100px;
+    margin-top: 50px;
+}
+.card{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    text-align: center;
+    margin-top: 60px;
+}
+.card .circle-img{
+    border-radius: 50%;
+    object-fit: contain;
+}
+.card h3{
+    font-family: var(--primary-font);
+    font-size: 30px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+.card p{
+    font-size: 22px;
+    font-family: var(--primary-font);
+} -->

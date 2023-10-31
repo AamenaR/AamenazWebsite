@@ -1,0 +1,268 @@
+@media(max-width:576px){
+    /* nav media */
+    header{
+        height: 100vh;
+        width: 100%;
+    }
+    nav{
+        display: none;
+    }
+    .hero-section{
+        width: 100%;
+    }
+    .text-heading h1{
+        font-size: 30px;
+    }
+
+    .text-heading p{
+        font-size: 15px;
+        padding: 0 0;
+    }
+
+    .btn-order-now{
+        font-size: 18px;
+        padding: 3px 25px;
+    }
+
+    /* section 2 media */
+    .section-wrapper{
+        height: auto    ;
+      }
+      .shape1, .shape2{
+        display: none;
+      }
+      .shape4{
+        top: 13%;
+        left: 10px;
+      }
+      .shape5{
+        top: 50px;
+        right: 15px;
+      }
+      .main-text{
+        width: 100%;
+        padding: 0;
+      }
+      .main-text h2{
+        font-size: 30px;
+        padding-top: 10px;
+      }
+      .main-text p{
+        font-size: 20px;
+        padding: 15px 20px 30px;
+      }
+
+      .row{
+        flex-direction: column;
+      }
+
+      .col-33 {
+      width: 100%;
+      }
+
+    /* section 2-3 */
+    .circle-flex{
+        flex-direction: column;
+        gap: 40px;
+        margin-bottom: 20px;
+    }
+
+    .circle-content{
+        height: 250px;
+        width: 250px;
+    }
+    .circle-content p{
+        font-size: 20px;
+    }
+
+    .flex-div{
+        flex-direction: column;
+        row-gap: 30px;
+    }
+
+    .text-info{
+        width: 90%;
+        text-align: center;
+    }
+    .text-info .title-here{
+        margin-top: 60px;
+        font-size: 30px;
+        margin-bottom: 10px;   
+    }
+    .text-info .info{
+        font-size: 20px;
+    }
+
+    .img-div{
+        display: none;
+    }
+
+    .pricing{
+        padding-top: 25px;
+    }
+    .pricing h1{
+        font-size: 30px;
+        margin-bottom: 8px;   
+    }
+    .pricing p{
+        font-size: 18px;
+        width: 90%;
+    }
+
+    .product-flex{
+        flex-direction: column;
+    }
+    .product{
+        width: 80%;
+    }
+    .vh-100{
+        height: auto;
+    }
+
+    .grid{
+        grid-template-columns: 1fr;
+        padding: 10px 0;
+    }
+
+    .block-text h4{
+        font-size: 22px;
+    }
+
+    .block-text p{
+        font-size: 18px;
+    }
+
+    .last-info{
+        width: 90%;
+    }
+
+    .row .main-text p{
+    font-size: 25px;
+    width: 100%;
+    }
+    .row strong{
+        font-size: 25px;
+        padding-top: 30px;
+    }
+    /* footer */
+
+    .main{
+        flex-direction: column;
+        align-items: center;
+        padding: 30px 20px;;
+    }
+
+    .flex-wrap{
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .titlee{
+        width: 90%;
+        text-align: center;
+    }
+    .titlee h5{
+        margin-top: 20px;
+        font-size: 22px;
+        text-align: left;
+    }
+    .titlee p{
+        width: 100%;
+        font-size: 18px;
+    }
+
+    .icons{
+        font-size: 18px;
+        justify-content: center;
+    }
+        
+    .titlee ul li{
+            font-size: 18px;
+    }
+}
+
+/* 768px */
+@media(max-width:768px){
+    nav .logo{
+        align-self: center;
+        box-sizing: unset;
+    }
+
+    ul{
+        display: none;
+    }
+
+    header{
+        height: 100vh;
+        width: 100%;   
+    }
+
+    .text-heading h1{
+        width: 100%;
+        line-height: 1.2;
+        font-size: 40px;
+    }
+
+    .text-heading p{
+        width: 80%;
+        font-size: 18px;
+        padding: 0 0;  
+        text-align: center;
+    }
+
+    .btn-order-now{
+        font-size: 18px;
+        padding: 3px 25px;
+    }
+
+    /* section 2 */
+    .wave-1,.wave-2{
+        display: none;
+    }
+
+    .triangle-1{
+        left: 30px;
+    }
+    .square{
+        right: 50px;
+    }
+
+    .text{
+        top: 10%;
+        width: 100%;
+    }
+    .title h1{
+        font-size: 35px;
+        margin-bottom: 8px;
+    }
+    .title p{
+    font-size: 18px;
+    width: 50%;
+    }
+
+    .yellow-overlay{
+        height: 100vh;
+    }
+    .title-2 h1{
+        font-size: 35px;
+    }
+    .title-2 p{
+    font-size: 18px;
+    width: 90%;
+    }
+
+    /* section 2-3 */
+    .circle-flex{
+        flex-direction: column;
+        gap: 40px;
+        margin-bottom: 20px;
+    }
+
+    .circle-content{
+        height: 250px;
+        width: 250px;
+    }
+    .circle-content p{
+        font-size: 20px;
+    }
+}

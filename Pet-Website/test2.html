@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>test 2 of section 3</title>
+    <style>
+      .section-wrapper {
+        height: 100vh;
+        position: relative;
+      }
+
+      .yellow-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background-image: url(imgs/sec-3.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        z-index: -1;
+      }
+
+       .yellow-overlay::after{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: inherit;
+        width: inherit;
+        background-image: url(imgs/rgba-img.png);
+        opacity: 0.6;
+        z-index: 1;
+      }
+
+      .container {
+        width: 90%;
+        margin: auto;
+        /* background: #000; */
+      }
+      .row {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+      }
+      .col-33 {
+        /* width: 33.33%; */
+        text-align: center;
+      }
+      .circle-content {
+        position: relative;
+        height: 300px;
+        width: 300px;
+        background: transparent;
+        border-radius: 50%;
+        border: 10px solid #ffffff;
+      }
+
+      .circle-content strong {
+        position: absolute;
+        font-family: var(--primary-font);
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 56px;
+        font-weight: bold;
+      }
+
+      .circle-content p {
+        font-family: var(--primary-font);
+        position: absolute;
+        top: 60%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 21px;
+        padding-top: 35px;
+      }
+      h4 {
+        font-size: 30px;
+        padding: 20px 0px;
+      }
+      h4 + p {
+        font-size: 15px;
+      }
+      .main-text {
+        width: 70%;
+        margin: auto;
+        padding: 50px;
+        text-align: center;
+      }
+      h2 {
+        font-size: 50px;
+        text-transform: capitalize;
+      }
+      h2 + p {
+        font-size: 25px;
+        padding: 20px 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <div class="section-wrapper">
+        <div class="yellow-overlay">
+          <!-- <div class="overlay">
+            background image
+          </div> -->
+        </div>
+
+        <div class="container">
+          <div class="main-text">
+            <h2>title here</h2>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas
+              saepe porro accusamus! Reprehenderit, nostrum sunt.
+            </p>
+          </div>
+          <div class="row">
+            <div class="col-33">
+              <div class="circle-content">
+                <strong>3.5k</strong>
+                <p>Pet Care</p>
+              </div>
+            </div>
+            <div class="col-33">
+              <div class="circle-content">
+                <strong>900</strong>
+                <p>Outlet</p>
+              </div>
+            </div>
+            <div class="col-33">
+              <div class="circle-content">
+                <strong>2k+</strong>
+                <p>Pet Helping</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- <div class="sec-3">
+        <div class="yellow-overlay sec-3-img">
+            <div class="overlay"></div>
+            <img src="imgs/shape-5.png" alt="" class="square2">
+
+          <div class="container">
+            <div class="main-text">
+                    <h2>title here</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum illo provident ipsam?</p>
+            </div>  
+            <div class="row">
+                    <div class="circle-content">
+                        <strong>3.5k</strong>
+                        <p>Pet Care</p>
+                    </div>
+                    <div class="circle-content">
+                        <strong>900</strong>
+                        <p>Outlet</p>
+                    </div>
+                    <div class="circle-content">
+                        <strong>2k+</strong>
+                        <p> Pet Helping</p>
+                    </div>
+             </div>
+           </div>
+        </div>
+    </div> -->
+
+    <!-- section-8 -->
+            <!-- <section class="sec-8">
+            <div class="yellow-overlay sec-8-img">
+                <div class="overlay"></div>
+            </div>
+
+            <div class="last-info">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam saepe ut quia.</p>
+
+                <strong>Dr jenny</strong>
+            </div>
+
+        </section> -->
+  </body>
+</html>
